@@ -1,0 +1,14 @@
+.add-buttons-nvm{
+  margin-right:10px;
+  margin-left:10px;
+  height:50px;
+  border-radius: 17px;
+  border-color: grey;
+  background-color: lightgrey;
+  transition: 0.35s;
+}
+.add-buttons-nvm:hover{
+  opacity: 0.75;
+}
+
+ /* --- 00015775 --- */

@@ -1,0 +1,38 @@
+<div class="container my-5">
+
+  <h1 class="mb-5">Cars</h1>
+
+  <table class="table" *ngIf="cars && cars.length>0">
+
+    <thead>
+      <tr>
+        <th>CarId</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Daily Rate</th>
+        <th>Rental Date</th>
+        <th>Return Date</th>
+        <th>CustomerId</th>
+        <th> </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let car of cars">
+        <td>{{car.CarId}}</td>
+        <td>{{ car.Model}}</td>
+        <td>{{ car.Year}}</td>
+        <td>{{ car.DailyRate}}</td>
+        <td>{{ car.RentalDate}}</td>
+        <td>{{ car.ReturnDate}}</td>
+        <td>{{ car.CustomerId}}</td>
+        <td><a [routerLink]="['/cars', 'edit', car.CarId]">Edit</a></td>
+      </tr>
+    </tbody>
+  
+  </table>
+  <p *ngIf="!cars || cars.length <= 0 ">No Cars Found</p>
+
+</div>
+
+<!-- 00015775 -->

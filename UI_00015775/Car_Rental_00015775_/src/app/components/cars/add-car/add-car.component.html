@@ -1,0 +1,50 @@
+<div class="container my-5">
+  <h1 class="mb-5">Add New Car</h1>
+
+    <div class="row">
+      <div class="col-6">
+        <form #form="ngForm" (ngSubmit)="addCar()">
+      <!-------------- 00015775 ------------->
+          <div class="mb-3">
+            <label for="model" class="form-label">Model</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Model"
+            id="model" name="model" [(ngModel)]="addCarRequest.Model">
+      <!-------------- 00015775 ------------->
+          </div>
+          <!-------------- 00015775 ------------->
+          <div class="mb-3">
+            <label for="year" class="form-label">Year</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Year"
+            id="year" name="year" [(ngModel)]="addCarRequest.Year">
+      <!-------------- 00015775 ------------->
+          </div>
+          <!-------------- 00015775 ------------->
+          <div class="mb-3">
+            <label for="dailyrate" class="form-label">Daily Rate</label>
+            <input type="number" class="form-control"  aria-describedby="emailHelp" placeholder="Enter Daily Rate"
+            id="dailyrate" name="dailyrate" [(ngModel)]="addCarRequest.DailyRate">
+
+          </div>
+    
+          <div class="mb-3">
+            <label for="rentaldate" class="form-label">Rental Date</label>
+            <input type="date" class="form-control" aria-describedby="emailHelp"
+            id="rentaldate" name="rentaldate" [(ngModel)]="addCarRequest.RentalDate">
+      <!-------------- 00015775 ------------->
+          </div>
+    
+          <div class="mb-3">
+            <label for="returndate" class="form-label">Return Date</label>
+            <input type="date" class="form-control" aria-describedby="emailHelp"
+            id="returndate" name="returndate" [(ngModel)]="addCarRequest.ReturnDate">
+
+          </div>
+    
+          <button type="submit" class="btn btn-primary mx-1">Save</button>
+
+        </form>
+      </div>
+    </div>
+
+</div>
+

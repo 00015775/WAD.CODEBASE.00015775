@@ -1,0 +1,47 @@
+<div class="container my-5">
+  <h1 class="mb-5">Add New Customer</h1>
+
+    <div class="row">
+      <div class="col-6">
+      <!-------------- 00015775 ------------->
+        <form #form="ngForm" (ngSubmit)="addCustomer()">
+      <!-------------- 00015775 ------------->
+
+          <div class="mb-3">
+            <label for="fullname" class="form-label">Full Name</label>
+            <input type="text" class= "form-control"  aria-describedby="emailHelp" placeholder="Enter your full name" 
+            id="fullname" name="fullname" [(ngModel)]="addCustomerRequest.FullName">
+
+          </div>
+          <!-------------- 00015775 ------------->
+    
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" aria-describedby="emailHelp" placeholder="Enter your phone number"
+            id="phone" name="phone" [(ngModel)]="addCustomerRequest.Phone">
+
+          </div>
+    
+          <!-------------- 00015775 ------------->
+    
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email"
+            id="email" name="email" [(ngModel)]="addCustomerRequest.Email">
+
+          </div>
+    
+    
+          <button type="submit" class="btn btn-primary mx-1">Save</button>
+
+    
+          <!-------------- 00015775 ------------->
+        </form>
+      </div>
+    </div>
+
+    
+
+
+</div>
+

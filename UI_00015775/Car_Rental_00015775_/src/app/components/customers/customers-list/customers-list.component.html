@@ -1,0 +1,32 @@
+<div class="container my-5">
+
+  <h1 class="mb-5">Customers</h1>
+
+  <table class="table" *ngIf="customers && customers.length > 0">
+
+    <thead>
+      <tr>
+        <th>CustomerId</th>
+        <th>FullName</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th> </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.CustomerId}}</td>
+        <td>{{ customer.FullName}}</td>
+        <td>{{ customer.Phone}}</td>
+        <td>{{ customer.Email}}</td>
+        <td><a [routerLink]="['/customers', 'edit', customer.CustomerId]">Edit</a></td>
+      </tr>
+    </tbody>
+  
+  </table>
+  <p *ngIf="!customers || customers.length <= 0">No Customers Found</p>
+
+</div>
+
+<!-- 00015775 -->
